@@ -1,0 +1,14 @@
+.vs/
+Debug/
+Release/
+x64/
+x86/
+ipch/
+
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.vcxproj.user
+*.suo

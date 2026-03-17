@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\Helix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GeometryTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ellipse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Curve.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Circle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{d9bf122f-3cea-4e48-84fe-57ed3adfb11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{dafcabd6-a7f8-4b50-a7df-829c0d9b366e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Circle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Curve.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ellipse.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Helix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
