@@ -12,15 +12,13 @@
 #include <algorithm>
 #include <numeric>
 
-/* + 1. создать enum для свитч кейсов*/
-
 enum CurveType
 {
     CircleType = 0,
     EllipseType = 1,
     HelixType = 2
 };
-const int N = 3; //кол-во кривых !!!oigul подумать про большее количество кривых
+const int N = 10;
 
 const int RMAX = 10;
 const int STEPMAX = 5;
@@ -58,8 +56,6 @@ std::shared_ptr<Curve> createCurves(bool& hasCircle, bool& hasEllipse, bool& has
         break;
     }
     }
-
-    //curvePtr = std::make_shared<Circle>(-5);
 
     return curvePtr;
 }
@@ -104,7 +100,7 @@ void generateCurves(std::vector<std::shared_ptr<Curve>>& curves)
 //3.
 void printCoordinates(const std::vector<std::shared_ptr<Curve>>& curves, double t)
 {
-    for (int i = 0; i < curves.size(); ++i) //какой size лучше !!!oigul
+    for (int i = 0; i < curves.size(); ++i)
     {
         Point3D point3D = curves[i]->getPoint(t);
         Vector3D vector3D = curves[i]->getDerivative(t);
